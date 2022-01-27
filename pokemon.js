@@ -1,4 +1,4 @@
-const inputField = document.querySelector("[name=name]");
+const inputField = document.querySelector("[name=name");
 
 function renderPokemon(response) {
   //console.log(response);
@@ -32,4 +32,3 @@ function loadPokemon(event) {
 }
 
 document.getElementById("js-form").addEventListener("submit", loadPokemon);
-
