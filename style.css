@@ -6,11 +6,16 @@ body {
   font-weight: bold;
 }
 
+.pokemonContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 h1 {
   text-align: center;
 }
 
-.form {
+#js-form {
   padding: 5px;
   margin: 5px;
   display: flex;
@@ -50,4 +55,25 @@ label {
   flex-wrap: wrap;
 }
 
-@media 768;
+.card {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #466583ce;
+}
+
+.card h4 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card img {
+  width: 180px;
+  height: 200px;
+}
+
