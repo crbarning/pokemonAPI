@@ -1,23 +1,21 @@
-.pokemonContainer {
-  display: flex;
-  flex-wrap: wrap;
-}
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-color: rgb(245, 245, 245);
   font-family: "Heebo", sans-serif;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 90px;
+  text-shadow: 2px 2px 6px #a9a9a9;
 }
 
 #js-form {
   padding: 5px;
-  margin: 30px;
   display: flex;
   justify-content: center;
 }
@@ -25,7 +23,6 @@ h1 {
 .search-box {
   padding: 10px;
   margin: 5px;
-  width: 200px;
   border: none;
   border-radius: 6px;
 }
@@ -51,13 +48,13 @@ label {
 
 .pokedex {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   margin: 20px;
   padding: 10px;
-  border: 1px solid black;
+  box-shadow: 5px 10px 8px #888888;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -72,6 +69,19 @@ label {
 }
 
 .card img {
-  width: 180px;
-  height: 200px;
+  width: 235px;
+  height: 269px;
+}
+
+
+@media screen and (max-width: 350px) {
+  #js-form {
+    flex-flow: wrap;
+    margin: 0px;
+  }
+
+  .card img {
+    width: 135px;
+    height: 169px;
+  }
 }
